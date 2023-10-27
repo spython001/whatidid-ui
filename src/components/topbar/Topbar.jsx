@@ -6,8 +6,8 @@ export default function Topbar() {
     <div className='topbar'>
         <div className="topWrapper">
             <div className="topLeft">
-                <TipsAndUpdatesOutlined/>
-                <span>What I did</span>
+                <TipsAndUpdatesOutlined className='topLeftIcon'/>
+                <span>what i did</span>
             </div>
             <div className="topCenter">
                 <div className="searchbar">
@@ -18,11 +18,11 @@ export default function Topbar() {
             <div className="topRight">
                 <button>
                     <Add className='topAddIcon'/>
-                    Create
+                    <span>Create</span>
                 </button>
-                <div className="topTight">
-                    <ExploreOutlined/>
-                    <CommentOutlined/>
+                <div className="topRightIcons">
+                    <ExploreOutlined className='rightIconsE'/>
+                    <CommentOutlined className='rightIconsC'/>
                 </div>
             </div>
         </div>
