@@ -1,10 +1,11 @@
 import './App.scss'
+import Topbar from './components/topbar/Topbar'
 
 function App() {
 
   return (
     <>
-    testing things
+    <Topbar/>
     </>
   )
 }
