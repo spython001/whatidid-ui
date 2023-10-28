@@ -1,4 +1,4 @@
-import { Add, CommentOutlined, ExploreOutlined, Search, TipsAndUpdatesOutlined } from '@mui/icons-material'
+import { Add, CommentOutlined, Search, SurroundSoundOutlined, TipsAndUpdatesOutlined } from '@mui/icons-material'
 import './topbar.scss'
 
 export default function Topbar() {
@@ -21,7 +21,7 @@ export default function Topbar() {
                     <span>Create</span>
                 </button>
                 <div className="topRightIcons">
-                    <ExploreOutlined className='rightIconsE'/>
+                    <SurroundSoundOutlined className='rightIconsE'/>
                     <CommentOutlined className='rightIconsC'/>
                 </div>
             </div>

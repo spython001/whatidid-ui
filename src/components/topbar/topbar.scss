@@ -1,7 +1,7 @@
 .topbar{
     width: 100%;
     height: 4rem;
-    background-color: rgb(230, 237, 243);
+    background-color: #e6edf3;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -19,6 +19,7 @@
             align-items: center;
             justify-content: center;
             margin-right: 20px;
+            cursor: pointer;
 
             span{
                 font-family: 'Lora', 'sans-serif';
@@ -77,6 +78,7 @@
                 width: 150px;
                 font-size: 1rem;
                 color: black;
+                cursor: pointer;
 
                 .topAddIcon{
                     margin-right: 10px;
@@ -92,12 +94,20 @@
             .topRightIcons{
                 display: flex;
                 align-items: center;
+                cursor: pointer;
 
                 .rightIconsE{
                     margin-right: 20px;
+                    font-size: 30px !important;
+                    &:hover{
+                        background-color: #cfdae4;
+                        size: 150px;
+                        border-radius: 50%;
+                    }
                 }
                 .rightIconsC{
                     margin-left: 20px;
+                    font-size: 25px !important;
                 }
             }
         }

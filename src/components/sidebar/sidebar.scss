@@ -1,0 +1,38 @@
+.sidebar{
+    flex:0.5;
+    height: calc(100vh - 4rem);
+    position: sticky;
+    top: 4rem;
+    background-color: #61cabe;
+
+    .sidebarWrapper{
+        padding: 20px;
+
+        .sidebarList{
+            list-style: none;
+            padding: 5px;
+
+            .sidebarListItem{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 20px 0;
+                color: #e6edf3;
+                cursor: pointer;
+
+                .sidebarIcon{
+                    margin: 10px;
+                }
+                .home{
+                    font-size: 40px !important;
+                }
+
+                &:hover{
+                    color: #f5fafd;
+                }
+            }
+            
+            
+        }
+    }
+}
