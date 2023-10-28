@@ -1,7 +1,9 @@
+import Profile1 from '../../components/profile2/Profile1'
 import './profile.scss'
 
 export default function Profile() {
   return (
+    <div className="profileCon">
     <div className='profile'>
         <div className="profileWrapper">
             <div className="profileCover">
@@ -25,6 +27,9 @@ export default function Profile() {
 
             <button className="edit">Edit Profile</button>
         </div>
+    </div>
+
+    <Profile1/>
     </div>
   )
 }
