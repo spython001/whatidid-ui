@@ -1,4 +1,4 @@
-import { Cottage, Explore, Notifications, PersonRounded } from '@mui/icons-material'
+import { Explore, Notifications, PersonRounded, HomeRounded } from '@mui/icons-material'
 import './sidebar.scss'
 
 export default function Sidebar() {
@@ -6,8 +6,9 @@ export default function Sidebar() {
     <div className='sidebar'>
         <div className="sidebarWrapper">
             <ul className="sidebarList">
-                <li className="sidebarListItem active">
-                    <Cottage className='sidebarIcon home '/>
+                
+                <li className="sidebarListItem">
+                    <HomeRounded className='sidebarIcon'/>
                     Home
                 </li>
 
