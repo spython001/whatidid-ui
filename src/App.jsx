@@ -2,6 +2,7 @@ import './App.scss'
 import Topbar from './components/topbar/Topbar'
 import Sidebar from './components/sidebar/Sidebar'
 import Home from './pages/home/Home'
+import Profile from './pages/profile/Profile'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <Topbar/>
     <div className="container">
       <Sidebar/>
-      <Home/>
+      <Profile/>
     </div>
     </>
   )
