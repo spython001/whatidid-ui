@@ -5,8 +5,11 @@ import './create.scss'
 export default function Create() {
   return (
     <div className='create'>
-        <CreateSm/>
-        <CreateLg/>
+      <h3>upload  video</h3>
+        <div className="wrapper">
+          <CreateSm/>
+          <CreateLg/>
+        </div>
     </div>
   )
 }

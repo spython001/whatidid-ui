@@ -1,5 +1,6 @@
 import { AutoAwesomeOutlined, DynamicFeed } from '@mui/icons-material'
 import { useState, useEffect } from 'react'
+import { Link } from "react-router-dom"
 import './profileCon.scss'
 
 export default function ProfileCon() {
@@ -16,7 +17,7 @@ export default function ProfileCon() {
     'Button 1': (
       <div className="butCon">
         <span>You have not posted anything yet</span>
-        <p>what is on your mind ? post something now by clicking <b>here</b></p>
+        <p>what is on your mind ? post something now by clicking <Link to='/create' className='link'><b>here</b></Link></p>
       </div>
     ),
 

@@ -1,4 +1,15 @@
 .create{
-    display: flex;
     flex:20;
+    margin: 15px;
+    font-family: 'Roboto' 'sans serif';
+    
+    .h3{
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .wrapper{
+        display: flex;
+    }
 }
