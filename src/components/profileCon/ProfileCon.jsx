@@ -47,7 +47,7 @@ export default function ProfileCon() {
         <button 
           onClick={() => handleButtonClick('Button 2')}
           className={selectedButton === 'Button 2' ? 'clicked' : 'rightButton' }
-        >
+        > 
           <AutoAwesomeOutlined className='rightIcon'/>
         </button>
       </div>
