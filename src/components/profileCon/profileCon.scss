@@ -7,29 +7,76 @@
     margin-top: 15px;
     position: relative;
     font-family: 'Roboto' 'sans-serif';
-
+    text-align: left;
     .wrapper{
         display: flex;
         align-items: center;
         justify-content: space-around;
         margin-top: 20px;
 
-        .right{
-
+        .rightButton{
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            
             .rightIcon{
                 font-size: 30px !important;
-                cursor: pointer;
                 color: #534e4e;
             }
         }
 
-        .left{
+        .leftButton{
+            border: none;
+            background-color: white;
+            cursor: pointer;
+
             .leftIcon{
                 font-size: 30px !important;
-                cursor: pointer;
                 color: #534e4e;
             }
         }
 
+    }
+
+    .leftContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .rightContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.centered{
+    text-align: center;
+    font-family: 'Roboto' 'sans-serif';
+    
+    .butCon{
+        margin-top: 30px;
+        span{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        p{
+            margin-top: 30px;
+            font-size: 20px;
+
+            b{
+                color: #8ed6ce;
+                font-weight: 200;
+            }
+        }
+
+        .b2{
+            margin-top: 10px;
+            font-size: 25px;
+        }
     }
 }
