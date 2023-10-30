@@ -1,4 +1,5 @@
 import { Explore, Notifications, PersonRounded, HomeRounded } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
 import './sidebar.scss'
 
 export default function Sidebar() {
@@ -7,10 +8,12 @@ export default function Sidebar() {
         <div className="sidebarWrapper">
             <ul className="sidebarList">
                 
-                <li className="sidebarListItem">
-                    <HomeRounded className='sidebarIcon'/>
-                    Home
-                </li>
+                <Link to='/' className='link'>
+                    <li className="sidebarListItem">
+                        <HomeRounded className='sidebarIcon'/>
+                        Home
+                    </li>
+                </Link>
 
                 <li className="sidebarListItem">
                     <Explore className='sidebarIcon'/>
@@ -22,10 +25,12 @@ export default function Sidebar() {
                     Notification
                 </li>
 
-                <li className="sidebarListItem">
-                    <PersonRounded className='sidebarIcon'/>
-                    Profile
-                </li>
+                <Link to='/profile' className='link'>
+                    <li className="sidebarListItem">
+                        <PersonRounded className='sidebarIcon'/>
+                        Profile
+                    </li>
+                </Link>
             </ul>
         </div>
     </div>
