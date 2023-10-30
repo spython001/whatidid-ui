@@ -1,4 +1,4 @@
-import Profile1 from '../../components/profile2/Profile1'
+import ProfileCon from '../../components/profileCon/ProfileCon'
 import './profile.scss'
 
 export default function Profile() {
@@ -29,7 +29,7 @@ export default function Profile() {
         </div>
     </div>
 
-    <Profile1/>
+    <ProfileCon/>
     </div>
   )
 }

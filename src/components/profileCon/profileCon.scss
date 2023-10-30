@@ -1,0 +1,35 @@
+.profileContainer{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 15px;
+    position: relative;
+    font-family: 'Roboto' 'sans-serif';
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        .right{
+
+            .rightIcon{
+                font-size: 30px !important;
+                cursor: pointer;
+                color: #534e4e;
+            }
+        }
+
+        .left{
+            .leftIcon{
+                font-size: 30px !important;
+                cursor: pointer;
+                color: #534e4e;
+            }
+        }
+
+    }
+}
