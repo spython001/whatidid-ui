@@ -24,7 +24,7 @@ export default function ProfileCon() {
       <div className="butCon">
         <span>You do not have any reviews!</span>
         <p>You can get reviews by collaborating and connecting with other experts</p>
-        <b className='b2'>Get Started</b>
+        <h3 className='b2'>Get Started</h3>
       </div>
     ),
   };
@@ -37,11 +37,17 @@ export default function ProfileCon() {
   return (
     <div className={`profileContainer ${isCentered ? 'centered' : ''}`}>
       <div className="wrapper">
-        <button className="leftButton" onClick={() => handleButtonClick('Button 1')}>
+        <button 
+          onClick={() => handleButtonClick('Button 1')}
+          className={selectedButton === 'Button 1' ? 'clicked' : 'leftButton' }
+        >
           <DynamicFeed className='leftIcon'/>
         </button>
 
-        <button className="rightButton" onClick={() => handleButtonClick('Button 2')}>
+        <button 
+          onClick={() => handleButtonClick('Button 2')}
+          className={selectedButton === 'Button 2' ? 'clicked' : 'rightButton' }
+        >
           <AutoAwesomeOutlined className='rightIcon'/>
         </button>
       </div>

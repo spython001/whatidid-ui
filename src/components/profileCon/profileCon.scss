@@ -57,6 +57,16 @@
 .centered{
     text-align: center;
     font-family: 'Roboto' 'sans-serif';
+
+    .clicked{
+        color: #61cabe;
+        cursor: pointer;
+        border: none;
+        background-color: white;
+        transition: 0.5s;
+        border-bottom: 1px solid #61cabe;
+        flex:0.2;
+    }
     
     .butCon{
         margin-top: 30px;
@@ -71,12 +81,15 @@
             b{
                 color: #8ed6ce;
                 font-weight: 200;
+                margin-left: 5px;
             }
         }
 
         .b2{
-            margin-top: 10px;
+            margin-top: 40px;
             font-size: 25px;
+            color: #8ed6ce;
+            font-weight: 300;
         }
     }
 }
