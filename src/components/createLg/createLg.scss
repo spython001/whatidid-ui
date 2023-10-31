@@ -59,6 +59,42 @@
             justify-content: center;
             flex-direction: column;
             margin-top: 10px;
+            font-family: 'Roboto' 'sans serif';
+
+            span{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .copy{
+                margin-top: 10px;
+                font-size: 16px;
+                color: #82aaa7;
+            }
+        }
+
+        .buttons{
+            margin-top: 15px;
+
+            .discard{
+                padding: 8px 64px;
+                font-size: 1rem;
+                font-weight: 500;
+                border: none;
+                border-radius: 6px;
+                background-color: #adfaf6;
+                color:#82aaa7;
+            }
+
+            .post{
+                margin-left: 15px;
+                padding: 8px 64px;
+                font-size: 1rem;
+                font-weight: 500;
+                border: none;
+                border-radius: 6px;
+                background-color: #82aaa7;
+                color:#fff
+            }
         }
     }
 }
