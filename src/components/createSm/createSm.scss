@@ -2,43 +2,81 @@
     flex:1;
     margin-top: 10px;
     height: 80vh;
+    font-family: 'Roboto' 'sans serif';
+
+    h3{
+        font-weight: 200;
+    }
     
-
-    .wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 95%;
-        width: 85%;
-        border: 2px dashed #bcdbd8;
-        border-radius: 15px;
-        margin: 15px;
-
-        .container{
-            display: flex;
-            flex-direction: column;
-            margin: 55px;
-
-            .top{
+    label{
+        cursor: pointer;
+        .wrapper{
+            height: 95%;
+            width: 85%;
+            border: 2px dashed #bcdbd8;
+            border-radius: 15px;
+            margin: 20px;
+    
+            .container{
                 display: flex;
-                align-items: center;
-                justify-content: center;
                 flex-direction: column;
-                margin: 35px;
-
-                .topIcon{
-                    font-size: 50px !important;
+                margin: 80px;
+    
+                .top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                   
+                    .topIcon{
+                        font-size: 50px !important;
+                    }
+    
+                    .upload{
+                        margin-top: 5px;
+                        font-size: 20px;
+                        display: flex;
+                        align-self: center;
+                        justify-content: center;
+                    }
+                }
+    
+                .bottom{
+                    margin-top: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+    
+                    span{
+                        font-size: 16px;
+                        margin: 5px;
+                        color: #82aaa7;
+                        font-weight: 200;
+                    }
+                    .px{
+                        font-size: 14px;
+                    }
                 }
 
-                .upload{
-                    margin-left: 5px;
-                    font-size: 17px;
+                .select{
                     display: flex;
                     align-self: center;
                     justify-content: center;
+                    margin-top: 20px;
+                    
+                    border: 1px solid #82aaa7;
+                    background-color: #82aaa7;
+                    color: white;
+                    width: 90%;
+                    border-radius: 3px;
+                    margin-top: 30px;
+                    padding: 5px;
                 }
+    
             }
+    
         }
-
     }
+    
 }
