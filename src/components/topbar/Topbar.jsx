@@ -6,10 +6,12 @@ export default function Topbar() {
   return (
     <div className='topbar'>
         <div className="topWrapper">
-            <div className="topLeft">
-                <TipsAndUpdatesOutlined className='topLeftIcon'/>
-                <span>what i did</span>
-            </div>
+            <Link to='/' className='link'>
+                <div className="topLeft">
+                    <TipsAndUpdatesOutlined className='topLeftIcon'/>
+                    <span>what i did</span>
+                </div>
+            </Link>
             <div className="topCenter">
                 <div className="searchbar">
                     <Search className='searchIcon'/>

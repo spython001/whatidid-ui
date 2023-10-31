@@ -18,7 +18,7 @@ export default function CreateLg() {
         <div className="bottom">
           <span>our ai will run a copyright check</span>
           <h4>
-            we will check your video for potential copyright infringement on usewd sounds. 
+            we will check your video for potential copyright infringement on used sounds. 
             If infringements are found, you can edit the video before posting
           </h4>
         </div>

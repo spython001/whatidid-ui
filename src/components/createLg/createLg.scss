@@ -1,12 +1,64 @@
 .createLg{
     flex:2;
-    margin-left: 10px;
-    margin-top: 70px;
+    
+    margin-top: 60px;
     display: flex;
     font-family: 'Roboto' 'sans serif';
 
     .wrapper{
         display: flex;
         flex-direction: column;
+
+        .top{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Roboto' 'sans serif';
+            
+            span{
+             font-size: 18px;
+             font-weight: 500;  
+            }
+
+            input{
+                margin-top: 10px;
+                width: 95%;
+                height: 30px;
+                border-radius: 5px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        .middle{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 10px;
+            font-family: 'Roboto' 'sans serif';
+
+            span{
+                font-size: 18px;
+                font-weight: 500; 
+            }
+
+            .coverSheet{
+                width: 95%;
+                padding: 3px;
+                height: 200px;
+                border: 1px dashed #82aaa7;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+        }
+
+        .bottom{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 10px;
+        }
     }
 }
