@@ -1,3 +1,12 @@
 .createLg{
     flex:2;
+    margin-left: 10px;
+    margin-top: 70px;
+    display: flex;
+    font-family: 'Roboto' 'sans serif';
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
 }
