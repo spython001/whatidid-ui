@@ -27,7 +27,9 @@ export default function Topbar() {
                 </Link>
                 <div className="topRightIcons">
                     <SurroundSoundOutlined className='rightIconsE'/>
-                    <CommentOutlined className='rightIconsC'/>
+                    <Link to='/chat'>
+                      <CommentOutlined className='rightIconsC'/>
+                    </Link>
                 </div>
             </div>
         </div>

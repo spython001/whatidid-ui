@@ -5,6 +5,7 @@ import Sidebar from './components/sidebar/Sidebar'
 import Home from './pages/home/Home'
 import Profile from './pages/profile/Profile'
 import Create from './pages/create/Create'
+import Chat from './pages/chat/Chat'
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
           
           <Route path='/create'>
             <Create/>
+          </Route>
+
+          <Route path='/chat'>
+            <Chat/>
           </Route>
         </Switch>
     </div>
