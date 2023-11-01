@@ -95,6 +95,7 @@
             .topRightIcons{
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 cursor: pointer;
 
                 .rightIconsE{
@@ -102,13 +103,24 @@
                     font-size: 30px !important;
                     &:hover{
                         background-color: #cfdae4;
-                        size: 150px;
+                        width: 50px;
+                        height: 50px;
                         border-radius: 50%;
+                        transition: 0.2s ease;
+                        transform: 0px 0px;
                     }
                 }
                 .rightIconsC{
                     margin-left: 20px;
                     font-size: 25px !important;
+                    &:hover{
+                        background-color: #cfdae4;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        transition: 0.2s ease;
+                    }
                 }
             }
         }

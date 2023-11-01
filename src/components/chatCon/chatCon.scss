@@ -1,3 +1,103 @@
 .chatCon{
-    flex: 1.5;
+    flex: 1.06;
+    overflow-y: scroll;
+    position: sticky;
+
+    .wrapper{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Roboto' sans-serif;
+
+        .top{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            span{
+                font-size: 1.5em;
+                line-height: 2rem;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+
+            .chatSearch{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                width: 95%;
+                height: 2.8rem;
+                background: #f3f3f3;
+                border-radius: 5px;
+
+                .chatSearchIcon{
+                    margin-left: 10px;
+                    font-size: 30px !important;
+                }
+
+                input{
+                    border: none;
+                    background-color: #f3f3f3;
+                    font-size: 20px;
+
+                    &::placeholder{
+                        font-size: 18px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+        
+        .bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 80px;
+
+            span{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-weight: 500;
+
+            }
+
+            .connect{
+                margin-top: 20px;
+                font-size: 1.2rem;
+                line-height: 1.75rem;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            b{
+                margin-top: 20px;
+                text-decoration: underline;
+                color: #61cabe;
+                cursor: pointer;
+                font-weight: 200;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                text-align: center;
+
+            }
+        }
+    }
 }
+
+::-webkit-scrollbar{
+    width: 15px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+
