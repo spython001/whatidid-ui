@@ -1,5 +1,6 @@
 import ProfileCon from '../../components/profileCon/ProfileCon'
 import './profile.scss'
+import { Link } from 'react-router-dom'
 
 export default function Profile() {
   return (
@@ -25,7 +26,7 @@ export default function Profile() {
                 </div>   
             </div>
 
-            <button className="edit">Edit Profile</button>
+            <Link to='/edit' className='link'><button className="edit">Edit Profile</button></Link>
         </div>
     </div>
 
