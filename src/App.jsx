@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import Profile from './pages/profile/Profile'
 import Create from './pages/create/Create'
 import Chat from './pages/chat/Chat'
+import EditPage from './pages/edit page/EditPage'
 
 function App() {
 
@@ -30,6 +31,10 @@ function App() {
 
           <Route path='/chat'>
             <Chat/>
+          </Route>
+
+          <Route path='/edit'>
+            <EditPage/>
           </Route>
         </Switch>
     </div>

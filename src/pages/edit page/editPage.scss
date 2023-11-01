@@ -1,0 +1,120 @@
+.edit{
+    flex: 20;
+    margin-top: 2px;
+    background-color: #fff;
+    font-family: 'Roboto' sans-serif;
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        width: 97%;
+        height: 190px;
+        border: 1px solid #62cabe;
+        background-color: #62cabe;
+        border-radius: 15px;
+        margin: 15px;
+        
+        .wrapIcon{
+            color:#fff;
+            cursor:pointer;
+        }
+
+        .avatar{
+            position: absolute;
+            bottom: 330px;
+            left: 180px;
+            img{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+            }
+            
+            label{
+                color: #62cabe;
+                cursor: pointer;
+            }
+        }
+   }
+
+   .top{
+        margin-top: 100px;
+    
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px;
+
+            .userDetail{
+                display: flex;
+                flex-direction: column;
+                width: 575px;
+                padding: 10px;
+
+                input{
+                    height: 36px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #f3f3f3;
+
+                    &::placeholder{
+                        font-size: 1rem;
+                    }
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+                .inputName{
+                    &::placeholder{
+                        margin-left: 10px;
+                    }
+                }
+
+                label{
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                    margin-bottom: 10px;
+                }
+
+                select{
+                    height: 35px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #f3f3f3;
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    option{
+                        background-color: #fff;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            width: 97%;
+            margin: 20px;
+            height: 55px;
+            color: #fff;
+            background-color: #62cabe;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+
+}
