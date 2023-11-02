@@ -8,6 +8,7 @@ import Create from './pages/create/Create'
 import Chat from './pages/chat/Chat'
 import EditPage from './pages/edit page/EditPage'
 import Notifications from './pages/notifications/Notifications'
+import AudioRooms from './pages/audiorooms/AudioRooms'
 
 function App() {
 
@@ -42,6 +43,10 @@ function App() {
             <Notifications/>
           </Route>
         </Switch>
+
+        <Route path='/audiorooms'>
+          <AudioRooms/>
+        </Route>
     </div>
     </Router>
     </>

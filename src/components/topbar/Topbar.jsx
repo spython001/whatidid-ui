@@ -26,7 +26,11 @@ export default function Topbar() {
                     </button>
                 </Link>
                 <div className="topRightIcons">
-                    <SurroundSoundOutlined className='rightIconsE'/>
+                    
+                    <Link to='/audiorooms' className='link'>
+                        <SurroundSoundOutlined className='rightIconsE'/>
+                    </Link>
+                    
                     <Link to='/chat' className='link'>
                       <CommentOutlined className='rightIconsC'/>
                     </Link>
