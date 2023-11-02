@@ -1,3 +1,86 @@
 .audio{
     flex:20;
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        font-family: 'Roboto' sans-serif;
+
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #f3f3f3;
+            color: gray;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .Clicked{
+            color: #61cabe;
+            cursor: pointer;
+            border: none;
+            transition: 0.5s;
+            border-bottom: 1px solid #61cabe;
+        }
+    }
+
+    .content{
+        margin-top: 40px;
+        margin-left: 100px;
+        font-family: 'Roboto' sans-serif;
+
+        .butCon{
+            display: flex;
+            flex-direction: column;
+
+            span{
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 2rem;
+                padding-bottom: 0.5rem;
+            }
+
+            .active{
+                font-size: 1.3rem;
+                font-weight: 600;
+                line-height: 1.3rem;
+            }
+
+            .buttons{
+                button{
+                    border: 1px solid #82aaa7;
+                    color: gray;
+                    height: 50px;
+                    width: 100px;
+                    background-color: #f3f3f3;
+                    cursor: pointer;
+                    text-align: center;
+                    border-radius: 2px;
+                    margin-top: 15px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+
+                .click{
+                    color:#82aaa7;
+                    background-color: transparent;
+                    transition: 0.5s ease;
+                }
+
+                .buttonContent{
+                    margin-top: 16px;
+                    span{
+                        font-size: 18px;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
 }
