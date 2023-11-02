@@ -20,10 +20,12 @@ export default function Sidebar() {
                     Explore
                 </li>
 
-                <li className="sidebarListItem">
-                    <Notifications className='sidebarIcon'/>
-                    Notification
-                </li>
+                <Link to='/notifications' className='link'>
+                    <li className="sidebarListItem">
+                        <Notifications className='sidebarIcon'/>
+                        Notification
+                    </li>
+                </Link>
 
                 <Link to='/profile' className='link'>
                     <li className="sidebarListItem">

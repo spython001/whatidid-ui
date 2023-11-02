@@ -1,0 +1,32 @@
+.notifications{
+    flex:20;
+    font-family: 'Roboto' sans-serif;
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+
+        span{
+            color: #62cabe;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1rem;
+        }
+
+        .notifMsg{
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 200;
+            color: #82aaa7;
+        }
+
+        img{
+            height: 450px;
+            width: 450px;
+            margin-top: 10px;
+        }
+    }
+}
