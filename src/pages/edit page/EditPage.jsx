@@ -51,7 +51,7 @@ export default function EditPage() {
                 </div>
 
                 <div className="userDetail">
-                    <label>experties</label>
+                    <label>expertise</label>
                     <select>
                         <option>acting</option>
                         <option>accounting/finance</option>
