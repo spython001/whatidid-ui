@@ -26,6 +26,7 @@ useEffect(() => {
     setButton('Button a')
 }, []);
 
+
 const childButtonContent = {
     'Button a': (
         <span className='no'>No audiorooms available</span>
@@ -61,10 +62,52 @@ const childButtonContent = {
     ),
 
     
-    'Button 2': ('b'),
+    'Button 2': (
+        <div className="butCon">
+          <span>Audio Rooms</span>
+          <span className='active'>Active Audio Rooms</span>
+          <div className="buttons">
+              <button
+                onClick={()=>handleClick('Button a')}
+                className = {button === 'Button a' ? 'click' : '' }
+              >
+                  ALL ROOMS
+              </button>
+              
+              <button
+                onClick={() => handleClick('Button b')}
+                className = {button === 'Button b' ? 'click' : ''}
+              >
+                  MY ROOMS
+              </button>
+              <div className="buttonContent">{childButtonContent[button]}</div>
+          </div>
+      </div>
+    ),
 
     
-    'Button 3': ('c'),
+    'Button 3': (
+        <div className="butCon">
+          <span>Audio Rooms</span>
+          <span className='active'>Active Audio Rooms</span>
+          <div className="buttons">
+              <button
+                onClick={()=>handleClick('Button a')}
+                className = {button === 'Button a' ? 'click' : '' }
+              >
+                  ALL ROOMS
+              </button>
+              
+              <button
+                onClick={() => handleClick('Button b')}
+                className = {button === 'Button b' ? 'click' : ''}
+              >
+                  MY ROOMS
+              </button>
+              <div className="buttonContent">{childButtonContent[button]}</div>
+          </div>
+        </div>
+    ),
   }
 
 
