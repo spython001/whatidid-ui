@@ -55,7 +55,19 @@
             .headset{
                 display: flex;
                 align-items: center;
-                justify-content: center;
+
+                .active{
+                    margin-left: 10px;
+                }
+            }
+
+            .month{
+                display: flex;
+                align-items: center;
+                
+                .active{
+                    margin-left: 10px;
+                }
             }
 
             .buttons{

@@ -1,4 +1,4 @@
-import { HeadsetMic } from '@mui/icons-material';
+import { CalendarMonth, HeadsetMic } from '@mui/icons-material';
 import { useEffect, useState } from 'react'
 import './audioRooms.scss'
 
@@ -66,7 +66,7 @@ const childButtonContent = {
     'Button 2': (
         <div className="butCon">
           <span>Audio Rooms</span>
-          <span className='heaset'><HeadsetMic/> Active Audio Rooms</span>
+          <span className='headset'><HeadsetMic/> <div className='active'>Active Audio Rooms</div></span>
           <div className="buttons">
               <button
                 onClick={()=>handleClick('Button a')}
@@ -90,7 +90,7 @@ const childButtonContent = {
     'Button 3': (
         <div className="butCon">
           <span>Audio Rooms</span>
-          <span className='active'>Active Audio Rooms</span>
+          <span className='month'> <CalendarMonth/> <div className='active'>Active Audio Rooms</div></span>
           <div className="buttons">
               <button
                 onClick={()=>handleClick('Button a')}
