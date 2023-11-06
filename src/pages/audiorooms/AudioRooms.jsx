@@ -1,6 +1,7 @@
 import { CalendarMonth, HeadsetMic } from '@mui/icons-material';
 import { useEffect, useState } from 'react'
 import './audioRooms.scss'
+import '../../components/recorded/Recorded'
 
 export default function AudioRooms() {
   const [selectedButton, setIsSelectedButton] = useState(null);
@@ -19,6 +20,8 @@ useEffect(() => {
 const [button, setButton] = useState(null);
 
 //FOR CHILD BUTTON CONTENT
+
+//content1
 const handleClick = (button) =>{
     setButton(button);
   }
@@ -35,6 +38,25 @@ const childButtonContent = {
     'Button b': (
         <span>No audiorooms available</span>
     )
+}
+
+//content 2
+const handleClick1 = (button) =>{
+  setButton(button);
+}
+
+useEffect(() => {
+  setButton('Button c')
+}, []);
+
+
+const childButtonContent1 = {
+  'Button c': (
+      <div>ubi</div>
+  ),
+  'Button d': (
+      <span>No audiorooms available</span>
+  )
 }
 
 
@@ -69,19 +91,19 @@ const childButtonContent = {
           <span className='headset'><HeadsetMic/> <div className='active'>Active Audio Rooms</div></span>
           <div className="buttons">
               <button
-                onClick={()=>handleClick('Button a')}
-                className = {button === 'Button a' ? 'click' : '' }
+                onClick={()=>handleClick1('Button c')}
+                className = {button === 'Button c' ? 'click' : '' }
               >
                   ALL ROOMS
               </button>
               
               <button
-                onClick={() => handleClick('Button b')}
-                className = {button === 'Button b' ? 'click' : ''}
+                onClick={() => handleClick1('Button d')}
+                className = {button === 'Button d' ? 'click' : ''}
               >
                   MY ROOMS
               </button>
-              <div className="buttonContent">{childButtonContent[button]}</div>
+              <div className="buttonContent">{childButtonContent1[button]}</div>
           </div>
       </div>
     ),
