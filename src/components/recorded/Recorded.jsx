@@ -15,9 +15,10 @@ export default function Recorded() {
         <div className="bottom">
           <div className='bottomStuff'>
             <img src="/assets/noAvatar.png" alt="no avatar" />
-            <span>Mike Menser</span>
+            <span className='name'>Mike Menser</span>
             <span className="host">Host</span>
           </div>
+          <h4>passionate about code :)</h4>
         </div>
       </div>
     </div>
