@@ -1,7 +1,7 @@
 import { CalendarMonth, HeadsetMic } from '@mui/icons-material';
 import { useEffect, useState } from 'react'
 import './audioRooms.scss'
-import '../../components/recorded/Recorded'
+import Recorded from '../../components/recorded/Recorded';
 
 export default function AudioRooms() {
   const [selectedButton, setIsSelectedButton] = useState(null);
@@ -51,9 +51,8 @@ useEffect(() => {
 
 
 const childButtonContent1 = {
-  'Button c': (
-      <div>ubi</div>
-  ),
+  
+  'Button c': <Recorded/>,
   'Button d': (
       <span>No audiorooms available</span>
   )
