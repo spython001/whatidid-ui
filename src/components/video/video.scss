@@ -1,0 +1,75 @@
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 45%;
+    
+    .videoStuff{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        video{
+            height: 100%;
+        }
+
+        .name{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            color: white;
+            bottom: 150px;
+            left: 20px;
+
+            img{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            span{
+                margin-left: 10px;
+            }
+        }
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 100px;
+            left: 20px;
+            color: white;
+
+            span{
+                font-size: 14px;
+            }
+
+            .tag{
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+
+        }
+    }
+
+    .actionButtons{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 380px;
+        bottom:-80px;
+
+        button{
+            border: none;
+            color: white;
+            background-color: inherit;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .click{
+            color: red;
+        }
+    }
+}
