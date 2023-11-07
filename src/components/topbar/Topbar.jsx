@@ -9,7 +9,7 @@ export default function Topbar() {
             <Link to='/' className='link'>
                 <div className="topLeft">
                     <TipsAndUpdatesOutlined className='topLeftIcon'/>
-                    <span>what i did</span>
+                    <span>Shoot Star</span>
                 </div>
             </Link>
             <div className="topCenter">
